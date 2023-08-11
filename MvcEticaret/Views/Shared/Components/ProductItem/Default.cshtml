@@ -1,0 +1,11 @@
+﻿<div class="product-item">
+    <img src="@Model.ImageUrl" alt="@Model.Title" />
+    <h2>@Model.Title</h2>
+    <div class="price">
+        @if (Model.IsSale)
+        {
+            <del>@Model.OldPrice</del>
+        }
+        <span>@Model.Price</span>
+    </div>
+</div>
